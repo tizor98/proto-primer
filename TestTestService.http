@@ -1,0 +1,21 @@
+### Create test
+GRPC 127.0.0.1:5060/test.TestService/SetTest
+
+{
+  "id": "test1",
+  "name": "Examen de matemáticas"
+}
+
+### Getting test info
+GRPC 127.0.0.1:5060/test.TestService/GetTest
+
+{
+  "id": "test1"
+}
+
+### Getting streaming of students info
+GRPC 127.0.0.1:5060/test.TestService/GetStudentsPerTest
+
+{
+  "testId": "test1"
+}

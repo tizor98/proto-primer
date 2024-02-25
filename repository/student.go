@@ -7,7 +7,7 @@ import (
 
 type IStudentRepository interface {
 	GetStudent(ctx context.Context, id string) (*models.Student, error)
-	SetStudent(ctx context.Context, student *models.Student) error
+	SetStudent(ctx context.Context, student *models.Student) (string, error)
 }
 
 func StudentRepository(ctx context.Context) IStudentRepository {

@@ -1,0 +1,15 @@
+### Create student
+GRPC 127.0.0.1:5060/student.StudentService/SetStudent
+
+{
+  "age": 20,
+  "id": "str1",
+  "name": "Carlos"
+}
+
+### Getting student info
+GRPC 127.0.0.1:5060/student.StudentService/GetStudent
+
+{
+  "id": "str1"
+}

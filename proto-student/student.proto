@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package student;
 
-option go_package = "github.com/tizor98/proto-primer;student";
+option go_package = "github.com/tizor98/proto-primer/proto-student";
 
 message Student {
   string id = 1;
